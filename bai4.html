@@ -1,68 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: auto;
-        }
-        
         .box {
-            width: 1000px;
-            height: 580px;
-            background-color: #ffd078;
-            padding: 4px;
-            margin-top: 50px;
-        }
-        
-        .box1 {
-            margin-left: 0;
-            text-align: left;
-            width: 200px;
-        }
-        
-        .box2 {
+            width: 150px;
+            min-height: 60px;
             margin: 0 auto;
-            text-align: center;
-            width: 200px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px #333;
         }
-        
-        .box3 {
-            text-align: right;
-            margin-left: 790px;
-            width: 200px;
+
+        .list > li {
+            list-style: upper-roman;
         }
+
+        .sub-list > li {
+            list-style: lower-roman;
+        }
+
+
     </style>
 </head>
-
 <body>
     <div class="box">
-        <div class="box1">
-            <h2>High Flying</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem quod sit expedita architecto officiis, dolores temporibus quibusdam provident numquam! Sit illum corrupti facere voluptatibus perspiciatis? Earum accusamus quibusdam
-                quos.
-            </p>
-        </div>
-
-        <div class="box2">
-            <h2>High Flying</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem quod sit expedita architecto officiis, dolores temporibus quibusdam provident numquam! Sit illum corrupti facere voluptatibus perspiciatis? Earum accusamus quibusdam
-                quos.
-            </p>
-        </div>
-
-        <div class="box3">
-            <h2>High Flying</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem quod sit expedita architecto officiis, dolores temporibus quibusdam provident numquam! Sit illum corrupti facere voluptatibus perspiciatis? Earum accusamus quibusdam
-                quos.
-            </p>
-        </div>
+        <ol class="list">
+            <li>Item one</li>
+            <li> Item two</li>
+            <li>Item three</li>
+            <li>Item four
+                <ol class="sub-list">
+                    <li>Item 4.1</li>
+                    <li>Item 4.2</li>
+                    <li>Item 4.3</li>
+                </ol>
+            </li>
+            <li>Item Five</li>
+        </ol>
     </div>
 </body>
-
 </html>
