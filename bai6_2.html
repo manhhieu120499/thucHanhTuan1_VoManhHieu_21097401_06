@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 200px;
+            background-color: #ffd090;
+            padding: 0 5px;
+            box-shadow: 1px 1px 10px #222;
+        }
+
+        table {
+            width: 400px;
+            height: 180px;
+            margin: 10px auto;
+        }
+
+        caption {
+            color: purple;
+        }
+
+        .heading_col {
+            background-color: violet;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .heading_row {
+            background-color: cyan;
+            padding: 0 5px;
+        }
+
+        tr:nth-child(n + 1) {
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table border="1">
+            <caption>
+                NUMBERS 1-5 in VARIOUS LANGUAGES
+            </caption>
+            <tr>
+                <td style="background-color: #fff"></td>
+                <td class="heading_col">English</td>
+                <td class="heading_col">Expanol</td>
+                <td class="heading_col">Francais</td>
+                <td class="heading_col">Italiano</td>
+                <td class="heading_col">Deutsch</td>
+            </tr>
+            <tr>
+                <td class="heading_row">1</td>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+                <td>four</td>
+                <td>five</td>
+            </tr>
+            <tr>
+                <td class="heading_row">2</td>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tes</td>
+                <td>cuatro</td>
+                <td>cinco</td>
+            </tr>
+            <tr>
+                <td class="heading_row">3</td>
+                <td>un</td>
+                <td>deux</td>
+                <td>trois</td>
+                <td>quatre</td>
+                <td>cinq</td>
+            </tr>
+            <tr>
+                <td class="heading_row">4</td>
+                <td>uno</td>
+                <td>due</td>
+                <td>tre</td>
+                <td>qualtro</td>
+                <td>cinque</td>
+            </tr>
+            <tr>
+                <td class="heading_row">5</td>
+                <td>eins</td>
+                <td>zwei</td>
+                <td>drei</td>
+                <td>vier</td>
+                <td>funf</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
