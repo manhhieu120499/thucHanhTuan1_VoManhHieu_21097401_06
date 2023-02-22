@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+ 
+        table {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            padding: 7px 10px;
+            background-color: blanchedalmond;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table border="1">
+            <tr>
+                <td class="white">1</td>
+                <td class="white" colspan="3">2</td>
+            </tr>
+            <tr>
+                <td class="white" rowspan="3">3</td>
+                <td class="orange">4</td>
+                <td class="orange">5</td>
+                <td rowspan="2" colspan="2" class="yellow">6</td>
+                
+                
+            </tr>
+            <tr>
+                <td class="orange">7</td>
+                <td class="orange">8</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="yellow">9</td>
+                <td class="yellow">10</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
