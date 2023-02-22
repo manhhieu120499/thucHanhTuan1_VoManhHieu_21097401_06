@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 370px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px #333;
+            margin: 20px auto;
+        }
+
+        label,h2,p, input {
+            margin-left: 10px;
+        }
+        
+        #inp_email {
+            margin-left: 91px;
+        }
+
+        #txtarea {
+            margin-left: 176px;
+            margin-top: 5px;
+        }
+
+        .checkBox {
+            margin-left: 93px;
+        }
+
+        .Send_message {
+            margin-top: 10px;
+        }
+        .lblmessage {
+            position: absolute;
+            margin-top: 69px;
+        }
+
+        select {
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="container">
+        <h2>Contact Us</h2>
+        <p>Use the following form to send a message to Example Cafe</p>
+        <label for="fmail">Your email</label>
+        <input type="email" name="fmail" id="inp_email"></br>
+        <label for="fmessage" class="lblmessage">Message</label>
+        <textarea name="" id="txtarea" cols="60" rows="10"></textarea></br>
+        <label for="">How did you hear of us ?</label>
+        <select>
+            <option value="1">Google</option>
+            <option value="2">Facebook</option>
+        </select></br>
+        <label for="">Newsletter</label>
+        <input type="checkbox" class="checkBox"> Ensure this box is checked if you would like to receive email updates </br>
+        <input type="submit" value="Send message" class="Send_message">
+    </form>
+</body>
+
+</html>
