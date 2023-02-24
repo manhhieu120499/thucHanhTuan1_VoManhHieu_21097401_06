@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px #222;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                Your message
+            </legend>
+            <table>
+                <tr>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" id="emailTo" readonly="readonly" size="20" value="Example Cafe"></td>
+                </tr>
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="txt" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>How you found us</legend>
+            <table>
+                <tr>
+                    <td><label for="selection">How did uou hear od us</label></td>
+                    <td>
+                        <select>
+                            <option value="1">Google</option>
+                            <option value="2">Facebook</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Newsletter</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Newsletter_checkbox" id="">Ensure this box is checked if you would like to receive email updates
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Send message">
+
+    </div>
+</body>
+</html>
