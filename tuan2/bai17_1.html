@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            box-shadow: 0 0 15px #333;
+            margin: 50px auto;
+            padding: 1px 5px;
+        }
+        form {
+            line-height: 2;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label>Browser: </label>
+            <select name="Browser" id="">
+                <option value="1"></option>
+                <option value="2">Chrome</option>
+                <option value="3">FireFox</option>
+            </select></br>
+            <label>Username: </label>
+            <input type="text" name="username"></br>
+            <label>Encryption: </label>
+            <select name="Encryption" id="">
+                <option value="1">2048 (High Grade)</option>
+                <option value="2">1080 (Medium Grade)</option>
+            </select>
+        </br>
+            <label for="">0</label>
+            <input type="range" name="Encryption" id="">
+            <label>100</label> </br>
+            <label>Birthday: </label>
+            <input type="text" placeholder="mm/dd/yyyy">
+        </br>
+        <label>Select your favorite color: </label>
+        <input type="color">
+        </br>
+        <label>Birthday (month and year): </label>
+        <input type="text" placeholder="--------  ----">
+        </br>
+        <label>Select a week: </label>
+        <input type="week" placeholder="Week --, ----">
+        </br>
+        <label>Select a time: </label>
+        <input type="time" placeholder="-- : -- --">
+        </br>
+        <label>Birthday (date and time): </label>
+        <input type="text"></br>
+        <label>E-mail: </label>
+        <input type="email"></br>
+        <label>Search Google: </label>
+        <input type="text"></br>
+        <label>Telephone: </label>
+        <input type="number"></br>
+        <label>Add your homepage</label>
+        <input type="text"></br>
+        <input type="submit" value="Submit">
+        </form>
+        <p><b>Note: </b>The datalist tag is not supported in Safari or IE9 (and earlier)</p>
+    </div>
+</body>
+</html>
