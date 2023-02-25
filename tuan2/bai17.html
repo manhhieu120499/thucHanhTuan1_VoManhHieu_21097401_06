@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            padding: 4px 10px;
+            border: 1px solid black;
+            box-shadow: -8px 8px 10px grey;
+            background-color: #ffd078;
+            margin: 40px auto;
+        }
+
+        .submit {
+            margin-left: 150px;
+        }
+
+        h2 {
+            margin-top: -5px;
+            text-align: center;
+        }
+
+        input[type = "submit"] {
+            margin-right: 15px;
+        }
+        
+        .contact {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            margin-left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Survey Form</h2>
+        <p>If you are interested in purchasing one more of our products, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+        <form action="">
+            <ol>
+                <li>
+                    <label>What is your name?</label></br>
+                    <input type="text">
+                </li>
+                <li>
+                    <label>What is your date of birth?</label></br>
+                    <label>Month:</label>
+                    <select name="month" id="">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                    </select>
+                    <label>Date:</label>
+                    <select name="date" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <label>Year:</label>
+                    <input type="number" style="width: 30px;">
+                </li>
+                <li>
+                    <label>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</label></br>
+                    <label class="text">
+                        Number/P.O. Box/Route:</br>
+                        Street/Avenue/Road:</br>
+                        City:</br>
+                        State/Zip:</br>
+                    </label>
+                    <textarea name="txt_area" id="contact" cols="50" rows="5">
+                        
+                    </textarea>
+                </li>
+                <li>
+                    <label>What is your email address?</label></br>
+                    <input type="email">
+                </li>
+                <li>
+                    <label>Have you viewed our online product catalog?</label></br>
+                    <input type="radio" name="btn_Yes">Yes
+                    <input type="radio" name="btn_Yes">No
+                </li>
+                <li>
+                    <label>If so, what products(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all apply. )</label></br>
+                    <input type="checkbox"> VCR </br>
+                    <input type="checkbox"> Big Screen TV </br>
+                    <input type="checkbox"> Audio Equipment </br>
+                    <input type="checkbox"> Video Equipment</br>
+                    <input type="checkbox"> Camera Equipment </br>
+                    <input type="checkbox"> Other 
+                    <input placeholder="Please List: " style="font-weight: bold;"></br>
+                </li>
+                <li>
+                    <label>Do you have any questions, comments or suggestions before proceeding to Order Form</label></br>
+                    <label for="" class="text">Your Input:</label>
+                    <textarea name="Input" id="contact" cols="50" rows="5">
+                    
+                    </textarea>
+                </li>
+            </ol>
+            <div class="submit">
+                <input type="submit" value="Send Form">
+                <input type="submit" value="Clear Form">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
