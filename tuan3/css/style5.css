@@ -3,5 +3,5 @@
     height: 800px;
     background-image: url(/tuan3/image/anh_one.jpg), url(/tuan3/image/Nguyen_Huy_Binh1.jpg);
     background-position: right bottom, left top ;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 }
