@@ -1,0 +1,14 @@
+.container {
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    line-height: 1.5;
+    border-color: #85C226 #F7c200 #4493A0 #DF127B;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 0px 30px 70px 20px;
+
+    box-shadow: 0px 30px 70px 20px;
+    -moz-box-shadow: 0px 30px 70px 20px;
+    -webkit-box-shadow: 0px 30px 70px 20px;
+}
