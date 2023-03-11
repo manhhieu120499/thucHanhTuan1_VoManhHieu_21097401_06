@@ -1,7 +1,9 @@
     
     * {
         box-sizing: border-box;
+       margin: 0;
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -19,6 +21,7 @@
         align-items: center;
         height: 60px;
         width: 100%;
+        
     }
     
     .left-header {
@@ -95,6 +98,12 @@
         margin-right: 100px;
     }
 
+    .right-product-detail .product-name h2
+    {
+        margin-bottom: 10px;
+    }
+    
+  
     .right-product-detail ul {
         padding: 0;
     }
@@ -102,7 +111,7 @@
     .right-product-detail ul li {
         list-style: none;
         display: inline-block;
-        margin-right: 5px;
+        margin: 15px 5px 15px 0;
     }
 
     .right-product-detail .first {
@@ -122,6 +131,7 @@
         align-items: center;
         width: 350px;
         gap: 10px;
+        margin-bottom: 10px;
     }
 
     .right-product-detail .product-desc ul li {
@@ -133,6 +143,11 @@
         height: 30px;
         padding: 0 10px;
         border-radius: 5px;
+        margin: 10px;
+    }
+
+    #Choice > p {
+        margin-top: 10px;
     }
 
     .quantity li {
@@ -150,6 +165,7 @@
         height: 40px;
         padding: 10px; 
         margin-right: 40px;
+        margin-top: 10px;
         border-radius: 5px;
     }
 
@@ -165,6 +181,7 @@
 /*related-products*/
     .related-product {
         margin-left: 100px;
+        margin-top: 40px;
     }
 
     .related-product .product-items {
@@ -173,6 +190,11 @@
         justify-content: space-between;
         margin-right: 100px;
         margin-top: 20px;
+    }
+
+    .related-product .product-items h3,
+    .related-product .product-items .info {
+        margin-top: 10px;
     }
 
     .related-product .related-picture {
@@ -198,7 +220,7 @@
 
     .item-related .info {
         display: flex;
-        width: 250px;
+        width: 100%;
         justify-content: space-between;
         height: 40px;
         align-items: center;
@@ -264,11 +286,11 @@
     .left-container .paragraph h2,
     .left-container .paragraph h3
     {
-        margin: 0;
+        margin: 5px;
     }
 
     .left-container .paragraph {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .right-container img {
@@ -287,6 +309,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-top: 25px;
     }
 
     .box-content .box-item {
@@ -295,11 +318,15 @@
 
     .box-content .box-item > img {
         width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-bottom: 10px;
     }
 
     .box-item .paragraph > h3
     {
-        margin-bottom: 0px;
+       font-weight: 600;
+       font-size: 18px;
     }
 
     .box-item .paragraph > p {
@@ -314,7 +341,7 @@
         border: 1px solid rgba(0, 128, 0, 0.816);
         text-align: center;
         line-height: 30px;
-        margin: 5px auto;
+        margin: 15px auto;
         color: rgba(0, 128, 0, 0.816);
     }
 
@@ -322,6 +349,10 @@
         margin-top: 40px;
         width: 1200px;
         margin-left: 100px;
+    }
+
+    .how_to_use > h2 {
+        margin-bottom: 20px;
     }
     
     .how_to_use > img {
@@ -347,6 +378,10 @@
         width: 50%;
     }
 
+    .right-review-item {
+        margin:15px;
+    }
+
     .right-review-item .avatar {
         width: 50px;
         height: 50px;
@@ -368,6 +403,7 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .left-review h2 {
@@ -393,7 +429,7 @@
         justify-content: space-between;
         align-items: center;
         width: 300px;
-        margin: 10px auto;
+        margin: 15px auto;
     }
 
     .review-footer a {
@@ -409,6 +445,148 @@
         text-align: center;
         line-height: 40px;
     }
+
+/*  FAQS*/
+    .faqs {
+        width: 1200px;
+        margin-left: 100px;
+        min-height: 100px;
+    }
+
+    .faqs-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .left-faqs, .right-faqs {
+        width: 50%;
+    }
+
+    .left-faqs .left-item {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+        width: 90%;
+        padding:10px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .right-faqs .right-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+/*footer*/
+    .footer {
+        width: 100%;
+        background-color: black;
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 400px;
+    }
+
+    .left-footer {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-left: 200px;
+    }
+
+    .left-footer ul {
+        padding: 0;
+    }
+
+    .left-footer ul li {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    .left-footer ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .left-footer select {
+        width: 100px;
+        height: 30px;
+        background: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .left-footer select option {
+        background-color: black;
+    }
+    
+    .right-footer {
+       width: 50%;
+       margin-left: 200px;
+    }
+    .right-footer h2 {
+        margin-bottom: 20px;
+    }
+    
+    .right-footer .subcribe {
+        width: 60%;
+        border: 1px solid white;
+        margin: 15px 0 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        gap: 10px;
+        
+    }
+
+    .right-footer .subcribe input {
+        background: none;
+        border: none;
+    }
+
+    .right-footer .subcribe a {
+        text-decoration: none;
+        color: white;
+        width: 40%;
+        background-color:  rgba(0, 128, 0, 0.919);
+        text-align: center;
+        padding: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .right-footer .subcribe svg {
+       margin-left: 10px;
+    }
+
+    .right-footer .socaial-network img{
+       margin-right: 8px;
+       margin-bottom: 20px;
+    }
+
+    .right-footer .footer-desc {
+        display: flex;
+        margin-left: 15px;
+    }
+
+    .right-footer .footer-desc ul {
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+    }
+
+
 
 
     
