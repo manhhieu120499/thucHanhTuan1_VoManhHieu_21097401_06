@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/thuchanhweb_dongho_maytinh/maytinh/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="top">
+                <h3>Calculator</h3>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 12l14 0"></path>
+                     </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-multiple" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"></path>
+                        <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2"></path>
+                     </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10 10l4 4m0 -4l-4 4"></path>
+                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+                     </svg>
+                </div>
+            </div>
+            <div class="center">
+                <input id="show_result" type="text" placeholder="0">
+            </div>
+            <div class="bottom">
+                <button class="gray" onclick="resetForm(this.innerText);">C</button>
+                <button class="gray" onclick="getOperator(this.innerText);">%</button>
+                <button class="gray" onclick="getOperator(this.innerText);">+/-</button>
+                <button class="yellow" onclick="getOperator(this.innerText);">/</button><br>
+                <button class="black" onclick="getValue(this.innerText);">7</button>
+                <button class="black" onclick="getValue(this.innerText);">8</button>
+                <button class="black" onclick="getValue(this.innerText);">9</button>
+                <button class="yellow" onclick="getOperator(this.innerText)">*</button><br>
+                <button class="black" onclick="getValue(this.innerText);">4</button>
+                <button class="black" onclick="getValue(this.innerText);">5</button>
+                <button class="black" onclick="getValue(this.innerText)">6</button>
+                <button class="yellow" onclick="getOperator(this.innerText)">-</button><br>
+                <button class="black" onclick="getValue(this.innerText);">1</button>
+                <button class="black" onclick="getValue(this.innerText);">2</button>
+                <button class="black" onclick="getValue(this.innerText);">3</button>
+                <button class="yellow" onclick="getOperator(this.innerText);">+</button><br>
+                <button class="black zero" onclick="getValue(this.innerText)">0</button>
+                <button class="black" onclick="getValue(this.innerText);">.</button>
+                <button class="yellow" onclick="cal(this.innerText);">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var $ = document;
+        var myResult = $.querySelector('#show_result');
+        var Opertt = 0;
+
+        function getValue(num) {
+            myResult.value += num;
+        }
+
+        function getOperator(num) {
+            var myVal = myResult.value;
+            Opertt++;
+            if (Opertt > 1) {
+                myVal = myVal.substr(0, myVal.length - 1);
+                Opertt = 1;
+            }
+            myResult.value = myVal + num;
+        }
+
+        function resetForm() {
+            myResult.value = "";
+            Opertt = 0;
+        }
+
+        function cal() {
+            var kqua = eval(myResult.value);
+            myResult.value = kqua;
+        }
+    </script>
+</body>
+
+</html>
